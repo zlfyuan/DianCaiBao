@@ -17,6 +17,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    //这是第一次操作,创建了一个label
+    UILabel *firstLab = [[UILabel alloc]initWithFrame:CGRectMake(self.view.center.x-50, self.view.center.y-15, 100, 30)];
+    firstLab.backgroundColor = [UIColor lightGrayColor];
+    [self.view addSubview:firstLab];
 }
 
 - (void)didReceiveMemoryWarning {
